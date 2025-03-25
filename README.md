@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
+# Judgmentalytics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📌 Overview
+Judgmentalytics is an advanced analytics platform designed to extract insights from legal judgments. It leverages AI and data analytics to provide meaningful interpretations and trends from court rulings, helping legal professionals, researchers, and policymakers make data-driven decisions.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **AI-Powered Analysis**: Extract key insights from legal judgments.
+- **Case Trend Prediction**: Identify patterns in past rulings to predict future trends.
+- **Search & Categorization**: Easily find and categorize judgments based on various filters.
+- **Data Visualization**: Graphs and charts for better understanding of legal trends.
+- **Custom Reports**: Generate comprehensive reports based on selected cases.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Project Structure
+```
+├── src/                  # Source code directory
+│   ├── components/       # Reusable UI components
+│   ├── pages/            # Main application pages
+│   ├── services/         # API and data-fetching logic
+│   ├── utils/            # Helper functions
+├── public/               # Static files
+├── assets/               # Images and icons
+├── .gitignore            # Git ignore file
+├── package.json          # Dependencies and scripts
+└── README.md             # Project documentation
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🛠️ Installation
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (>= v16.0)
+- npm or yarn
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Setup Instructions
+```sh
+git clone https://github.com/jitenkr2030/judgmentalytics.git
+cd judgmentalytics
+npm install  # or yarn install
+npm start    # or yarn start
 ```
+The application will run at `http://localhost:3000/`.
+
+## 📜 Usage
+1. **Login/Register** to access the dashboard.
+2. **Upload legal documents** for AI analysis.
+3. **Search and filter** judgments based on keywords or case types.
+4. **View analytics** through charts and reports.
+
+## 🤝 Contribution
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes and commit (`git commit -m 'Added feature X'`).
+4. Push to your fork (`git push origin feature-name`).
+5. Submit a pull request.
+
+## 📝 License
+This project is licensed under the [MIT License](LICENSE).
+
+## 📬 Contact
+For any inquiries, feel free to reach out:
+- **Author**: Jiten Kumar
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **GitHub**: [jitenkr2030](https://github.com/jitenkr2030)
+
+---
+Made with ❤️ by Judgmentalytics Team 🚀
+
